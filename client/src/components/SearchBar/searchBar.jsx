@@ -1,11 +1,11 @@
-
+import style from "./searchBar.module.css"
 
 
 const SearchBar = () => {
     return(
-        <div>
-            <input/>
-            <button>Buscar</button>
+        <div className={style.search}>
+            <input placeholder="Search..." type="text"/>
+        <button type="submit">Go</button>
         </div>
     )
 }
