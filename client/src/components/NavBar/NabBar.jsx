@@ -3,10 +3,14 @@
 const NavBar = () => {
     return(
         <nav>
-            <ul>
+            <button>Categorias</button>
+            <button>Celulares</button>
+            <button>Tablet</button>
+            <button>SmartTv</button>
+            {/* <ul>
                 <li><a href="">Categorias</a></li>
                 <li><a href="">Celulares</a></li>
-            </ul>
+            </ul> */}
         </nav>
     )
 }
