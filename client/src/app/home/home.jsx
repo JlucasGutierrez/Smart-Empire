@@ -4,6 +4,8 @@ import style from "./home.module.css"
 import Banner from "@/components/banner/banner";
 import Category from "@/components/category/category";
 import NavBar from "@/components/NavBar/NabBar";
+import Footer from "@/components/footer/footer";
+
 
 const HomePage = () => {
     return(
@@ -14,6 +16,7 @@ const HomePage = () => {
             // images={images} 
             />
             <Category/>
+            <Footer/>
         </div>
     )
 }
