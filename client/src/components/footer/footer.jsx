@@ -19,10 +19,10 @@ const Footer = () => {
         <div className={style.social_media}>
           Logo
           <img src="" alt="" />
-          <p>
+          {/* <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
             necessitatibus?
-          </p>
+          </p> */}
           <div>
             <ul className={style.ul}>
               <li className={style.li}>

@@ -1,16 +1,14 @@
-
+import style from "./navBar.module.css"
 
 const NavBar = () => {
     return(
-        <nav>
-            <button>Categorias</button>
-            <button>Celulares</button>
-            <button>Tablet</button>
-            <button>SmartTv</button>
-            {/* <ul>
-                <li><a href="">Categorias</a></li>
-                <li><a href="">Celulares</a></li>
-            </ul> */}
+        <nav className={style.nav}>
+            <button className={style.uibtn}>
+                <span>Categorias</span>
+            </button>
+            <button className={style.uibtn}><span>Celulares</span></button>
+            <button className={style.uibtn}><span>Tablet</span></button>
+            <button className={style.uibtn}><span>SmartTv</span></button>
         </nav>
     )
 }
