@@ -9,7 +9,10 @@ const Banner = () => {
   const images = [
    //// agregar aqui los banners 
    //// ej require('../path/to/image1.jpg'),
-   require('../../img/banMoto.jpg')
+   require('../../img/banMoto2.png'),
+   require('../../img/banSam.jpg'),
+   require('../../img/banIphone.jpg'),
+   require('../../img/banHua.jpg')
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
