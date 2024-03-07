@@ -10,7 +10,7 @@ function Header() {
                 <Image src={logo} width={120} height={97} alt={logo} />
             </div>
             <div><SearchBar/></div>
-            <button>Login</button>
+            <button className={style.button}>Login</button>
         
         </div>
     )
