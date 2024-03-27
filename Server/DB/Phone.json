@@ -1,0 +1,24 @@
+{
+    "Celulares": [
+        {
+            "Model":"Edge 40 Pro",
+            "Brand":"Motorola",
+            "Price":"$1.479.999"
+        },
+        {
+            "Model":"iPhone 13 ",
+            "Brand":"iPhone",
+            "Price":"$2.592.099"
+        },
+        {
+            "Model":"Galaxy S23 FE",
+            "Brand":"Samsung",
+            "Price":"$1.104.999"
+        },
+        {
+            "Model":"40SE",
+            "Brand":"TCL",
+            "Price":"$268.999"
+        }
+    ]
+}
