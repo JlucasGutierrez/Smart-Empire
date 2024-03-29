@@ -1,5 +1,5 @@
 import style from "./searchBar.module.css"
-
+import { Input } from '@chakra-ui/react'
 
 const SearchBar = () => {
     return(
