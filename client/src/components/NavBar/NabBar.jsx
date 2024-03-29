@@ -1,15 +1,32 @@
 import style from "./navBar.module.css"
+import {
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuItem,
+  } from '@chakra-ui/react'
 
 const NavBar = () => {
     return(
         <nav className={style.nav}>
-            <button className={style.uibtn}>
-                <span>Categorias</span>
-            </button>
-            <button className={style.uibtn}><span>Celulares</span></button>
-            <button className={style.uibtn}><span>Tablet</span></button>
-            <button className={style.uibtn}><span>SmartTv</span></button>
-        </nav>
+            <Menu >
+        <MenuButton className={style.uibtn}>
+          CATEGORIAS
+        </MenuButton>
+        <MenuList>
+          <MenuItem>Smart Phone</MenuItem>
+          <MenuItem>Tablet</MenuItem>
+          <MenuItem>Smart Tv</MenuItem>
+          <MenuItem>Pc</MenuItem>
+          <MenuItem>more</MenuItem>
+        </MenuList>
+      </Menu></nav>
+        // <nav className={style.nav}>
+        //     <button className={style.uibtn}>
+        //         <span>Categorias </span>
+               
+        //     </button>
+        // </nav>
     )
 }
 
