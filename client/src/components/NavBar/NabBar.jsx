@@ -1,3 +1,4 @@
+
 import style from "./navBar.module.css"
 import {
     Menu,
@@ -8,8 +9,8 @@ import {
 
 const NavBar = () => {
     return(
-        <nav className={style.nav}>
-            <Menu >
+    <nav className={style.nav}>
+      <Menu >
         <MenuButton className={style.uibtn}>
           CATEGORIAS
         </MenuButton>
@@ -20,7 +21,11 @@ const NavBar = () => {
           <MenuItem>Pc</MenuItem>
           <MenuItem>more</MenuItem>
         </MenuList>
-      </Menu></nav>
+      </Menu>
+      <button className={style.uibtn} >
+        <span>Ofertas</span>
+      </button>
+    </nav>
         // <nav className={style.nav}>
         //     <button className={style.uibtn}>
         //         <span>Categorias </span>
