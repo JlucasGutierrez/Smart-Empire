@@ -11,9 +11,11 @@ const Category = () => {
         <div className={style.container}>
             <div className={style.box}>
                 <h2 className={style.h2}>
-                    <p className={style.p}>Titulo</p>
+                    <p className={style.p}>Celulares</p>
                 </h2>
-                <div className={style.img}>Imagen</div>
+                <Link  href="/phone">
+                <div className={style.img}></div>
+                </Link>
                 <div className={style.ccuadro}>
                     <div className={style.cuadro}></div>
                     <div className={style.cuadro}></div>
@@ -22,7 +24,7 @@ const Category = () => {
             </div>
             <div className={style.box}>
                 <h2 className={style.h2}>
-                    <p className={style.p}>Titulo</p>
+                    <p className={style.p}>Computadoras</p>
                 </h2>
                 <div className={style.img}>Imagen</div>
                 <div className={style.ccuadro}>
