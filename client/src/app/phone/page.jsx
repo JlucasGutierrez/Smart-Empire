@@ -10,9 +10,17 @@ const Phone = () => {
         <Header/>
         <NavBar/> 
         <h1 className={style.title}>SMARTPHONES</h1>
-        <div>
+        <div className={style.element}>
            <FilterPhone/>
+           <div className={style.card}>
             <div><Card/></div>
+            <div><Card/></div>
+            <div><Card/></div>
+            <div><Card/></div>
+            <div><Card/></div>
+            <div><Card/></div>
+        </div>
+            
             
         </div>
     </div>
