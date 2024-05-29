@@ -1,27 +1,11 @@
-"use client"
-import Image from "next/image";
-import Header from "@/components/header/header";
-import style from "./home.module.css"
-import Banner from "@/components/banner/banner";
-import Category from "@/components/category/category";
-import NavBar from "@/components/NavBar/NabBar";
-import Footer from "@/components/footer/footer";
-import info from "../../img/info.png"
+import Navbar from "@/components/NavBar/navbar";
 
 
-const HomePage = () => {
+
+const Home = () => {
     return(
-        <div className={style.container}>
-            <Header/>
-            <NavBar/>
-            <Image src={info}/>
-            <Banner 
-            // images={images} 
-            />
-            <Category/>
-            {/* <Footer/> */}
-        </div>
+        <Navbar/>
     )
 }
 
-export default HomePage;
+export default Home;

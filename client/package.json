@@ -9,23 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.8.2",
-    "@chakra-ui/select": "^2.1.2",
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.0",
-    "@material-tailwind/react": "^2.1.9",
-    "@nextui-org/select": "^2.1.27",
-    "framer-motion": "^11.0.22",
-    "next": "14.1.0",
-    "react": "^18.2.0",
+    "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.0.1",
-    "semantic-ui-css": "^2.5.0",
-    "semantic-ui-react": "^2.1.5"
+    "next": "14.2.3"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.3"
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
   }
 }

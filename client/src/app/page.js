@@ -1,12 +1,8 @@
-const { default: HomePage } = require("./home/home")
+import Image from "next/image";
+import Home from "./Home/home";
 
-
-const LoginPage = () => {
-  return(
-    <div>
-      <HomePage/>
-    </div>
-  )
+export default function LoginPage() {
+  return (
+    <Home/>
+  );
 }
-
-export default LoginPage;
