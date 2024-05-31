@@ -1,3 +1,4 @@
+import Banner from "@/components/Banner/banner";
 import Header from "@/components/Header/header";
 import Navbar from "@/components/NavBar/navbar";
 
@@ -7,7 +8,8 @@ const Home = () => {
     return(
         <div> 
          <Navbar/>
-         <Header/>   
+         <Header/>
+         <Banner/>   
         </div>
        
     )

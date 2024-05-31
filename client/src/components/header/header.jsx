@@ -2,7 +2,7 @@
 
 function Header(){
     return(
-        <header class="bg-white bg-slate-900">
+        <header class="bg-black bg-slate-900">
   <div class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
     <div class="flex flex-1 items-center justify-end md:justify-between">
       <nav aria-label="Global" class="hidden md:block">
