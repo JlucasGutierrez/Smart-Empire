@@ -1,5 +1,8 @@
 "use client"
 import Image from "next/image";
+import celulares from "./../../img/celulares.jpg"
+import pc from "./../../img/pc.jpg"
+
 
 const Category = () => {
     return(
@@ -18,12 +21,12 @@ const Category = () => {
                 <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/501x301" />
               </div>
               <div class="md:p-2 p-1 w-full">
-                <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/600x360" />
+                <Image alt="gallery" class="w-full h-full object-cover object-center block" src={celulares} />
               </div>
             </div>
             <div class="flex flex-wrap w-1/2">
               <div class="md:p-2 p-1 w-full">
-                <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/601x361" />
+                <Image alt="gallery" class="w-full h-full object-cover object-center block" src={pc} />
               </div>
               <div class="md:p-2 p-1 w-1/2">
                 <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/502x302" />
