@@ -20,11 +20,14 @@ const Banner = () =>{
       }, [images.length]);
 
     return(
-        <Carousel loop={true} autoplay={true} className="rounded-xl max-w-full">
+      <div className="top-5">
+        <Carousel loop={true} autoplay={true} className="rounded-xl max-w-full top-px ">
         <Image 
         className="h-full w-full object-cover object-center" 
         src={images[currentImageIndex]} alt="Banner"/>
       </Carousel>
+      </div>
+        
     )
 }
 
