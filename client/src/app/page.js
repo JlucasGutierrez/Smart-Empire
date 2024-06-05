@@ -1,8 +1,11 @@
 import Image from "next/image";
-import Home from "./Home/home";
+import Home from "./home/home";
 
 export default function LoginPage() {
   return (
-    <Home/>
+    <div>
+      <Home/>
+    </div>
+    
   );
 }
