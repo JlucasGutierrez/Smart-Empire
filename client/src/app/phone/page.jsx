@@ -6,7 +6,12 @@ const Phone = () =>{
     return(
         <div>
             <Header/>
-            <CardPhone/>
+            <div className="flex flex-wrap">
+             <CardPhone/>
+             <CardPhone/>
+             <CardPhone/> 
+            </div>
+            
         </div>
     )
 }
