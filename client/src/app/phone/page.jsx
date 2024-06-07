@@ -4,7 +4,7 @@ import Header from "@/components/Header/header";
 
 const Phone = () =>{
     return(
-        <div>
+        <div className="bg-gray-700">
             <Header/>
             <div className="flex flex-wrap">
              <CardPhone/>
