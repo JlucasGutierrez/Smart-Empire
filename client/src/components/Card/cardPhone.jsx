@@ -2,7 +2,7 @@
 
 export const CardPhone = () => {
     return(
-    <div className="group relative block bg-black w-60 h-100 mx-4">
+    <div className="group relative block bg-black w-60 h-100 mx-4 rounded m-4">
       <img
        src="https://images.samsung.com/is/image/samsung/p6pim/es/2401/gallery/es-galaxy-s24-s928-491123-sm-s928bztheub-thumb-539444346"
        className="absolute inset-0 mt-20 opacity-75 transition-opacity group-hover:opacity-50"
