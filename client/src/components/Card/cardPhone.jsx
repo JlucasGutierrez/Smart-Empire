@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 
 export const CardPhone = () => {
@@ -12,9 +13,11 @@ export const CardPhone = () => {
        <p className="text-xl font-bold text-white sm:text-2xl">Samsung</p>
        <div className="mt-64  ">
          <div className="flex items-center justify-center translate-y-1 transform opacity-0 transition-all group-hover:translate-y-2 group-hover:opacity-100">
-           <button className="inline-block rounded bg-purple-800 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-purple-950">
-            Detalle
-            </button>
+           <Link href="/detail">
+             <button className="inline-block rounded bg-purple-800 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-purple-950">
+                Detalle
+              </button>
+           </Link>
           </div>
        </div>
       </div>
