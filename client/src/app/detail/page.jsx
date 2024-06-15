@@ -1,6 +1,7 @@
 import { CarouselDetail } from "@/components/Carousel/carousel";
 import Footer from "@/components/Footer/footer";
 import Header from "@/components/Header/header";
+import { TablePhone } from "@/components/Tablet/tabletPhone";
 
 
 const Detail = () =>{
@@ -53,6 +54,7 @@ const Detail = () =>{
             </div>
         </div>
     </div>
+    <TablePhone/>
             <Footer/>
         </div>
     )
