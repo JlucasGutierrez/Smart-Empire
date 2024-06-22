@@ -15,15 +15,15 @@ const Category = () => {
           </div>
           <div class="flex flex-wrap md:-m-2 -m-1">
             <div class="flex flex-wrap w-1/2">
+             <div class="md:p-2 p-1 w-full">
+                <Link href="/phone"
+                ><Image alt="gallery" class="w-full h-full object-cover object-center block" src="https://drive.google.com/drive/u/0/folders/1zpSLyEtFXcpHNoWzpApTXuYocgL3vAWI" /></Link>
+              </div>
               <div class="md:p-2 p-1 w-1/2 ">
                 <img  alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/500x300" />
               </div>
               <div class="md:p-2 p-1 w-1/2">
                 <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/501x301" />
-              </div>
-              <div class="md:p-2 p-1 w-full">
-                <Link href="/phone"
-                ><Image alt="gallery" class="w-full h-full object-cover object-center block" src={celulares} /></Link>
               </div>
             </div>
             <div class="flex flex-wrap w-1/2">
