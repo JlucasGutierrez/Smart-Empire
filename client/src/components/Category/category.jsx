@@ -1,7 +1,9 @@
 "use client"
 import Image from "next/image";
-import celulares from "./../../img/celulares.jpg"
-import pc from "./../../img/pc.jpg"
+import phone from "./../../img/phone.png"
+import per from "./../../img/per.png"
+import pc from "./../../img/pc.png"
+
 import Link from "next/link";
 
 
@@ -17,7 +19,7 @@ const Category = () => {
             <div class="flex flex-wrap w-1/2">
              <div class="md:p-2 p-1 w-full">
                 <Link href="/phone"
-                ><Image alt="gallery" class="w-full h-full object-cover object-center block" src="https://drive.google.com/drive/u/0/folders/1zpSLyEtFXcpHNoWzpApTXuYocgL3vAWI" /></Link>
+                ><Image alt="gallery" class=" object-cover object-center block rounded-md" src={phone} /></Link>
               </div>
               <div class="md:p-2 p-1 w-1/2 ">
                 <img  alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/500x300" />
@@ -28,10 +30,10 @@ const Category = () => {
             </div>
             <div class="flex flex-wrap w-1/2">
               <div class="md:p-2 p-1 w-full">
-                <Image alt="gallery" class="w-full h-full object-cover object-center block" src={pc} />
+                <Image alt="gallery" class=" object-cover object-center block rounded-md" src={pc} />
               </div>
               <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/502x302" />
+                <Image alt="gallery" class=" object-cover object-center block" src={per} />
               </div>
               <div class="md:p-2 p-1 w-1/2">
                 <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/503x303" />
