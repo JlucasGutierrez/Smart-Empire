@@ -15,31 +15,37 @@ const Category = () => {
      <div class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
           <div class="flex w-full mb-20 flex-wrap">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Master Cleanse Reliac Heirloom</h1>
-            <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Tecnología que Transforma</h1>
+            <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Nos dedicamos a ofrecerte una amplia selección de celulares y computadoras de última generación que no solo cumplen con tus necesidades tecnológicas, sino que también mejoran tu día a día.</p>
           </div>
-          <div class="flex flex-wrap md:-m-2 -m-1">
+          <div class="flex flex-wrap md:-m-2 -m-1 ">
             <div class="flex flex-wrap w-1/2">
-             <div class="md:p-2 p-1 w-full">
+             <div class="md:p-2 p-1  bg-gray-200 ">
                 <Link href="/phone"
-                ><Image alt="gallery" class=" object-cover object-center block rounded-md" src={phone} /></Link>
+                ><p>Celulares</p>
+                  <Image alt="gallery" class=" object-cover object-center block rounded-md" src={phone} /></Link>
               </div>
               <div class="md:p-2 p-1 w-1/2 ">
-                <Image  alt="gallery" class="w-full object-cover h-full object-center block rounded-md" src={acces} />
+                <p>Accesorios</p>
+                <Image  alt="gallery" class=" object-cover  object-center block rounded-md" src={acces} />
               </div>
               <div class="md:p-2 p-1 w-1/2">
-                <Image alt="gallery" class="w-full object-cover h-full object-center block rounded-md" src={compl} />
+                <p>Tablet,SmartWatch Auriculares</p>
+                <Image alt="gallery" class=" object-cover  object-center block rounded-md" src={compl} />
               </div>
             </div>
             <div class="flex flex-wrap w-1/2">
               <div class="md:p-2 p-1 w-full">
+                <p>Computadoras</p>
                 <Image alt="gallery" class=" object-cover object-center block rounded-md" src={pc} />
               </div>
               <div class="md:p-2 p-1 w-1/2">
+                <p>Accesorios Gaming</p>
                 <Image alt="gallery" class=" object-cover object-center block rounded-md" src={per} />
               </div>
               <div class="md:p-2 p-1 w-1/2">
-                <Image alt="gallery" class="w-full object-cover h-full object-center block rounded-md" src={comp} />
+                <p>Componentes Para tu Pc</p>
+                <Image alt="gallery" class=" object-cover object-center block rounded-md" src={comp} />
               </div>
             </div>
           </div>
