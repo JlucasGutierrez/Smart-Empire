@@ -3,6 +3,9 @@ import Image from "next/image";
 import phone from "./../../img/phone.png"
 import per from "./../../img/per.png"
 import pc from "./../../img/pc.png"
+import comp from "./../../img/comp.png"
+import acces from "./../../img/acces.png"
+import compl from "./../../img/compl.png"
 
 import Link from "next/link";
 
@@ -22,10 +25,10 @@ const Category = () => {
                 ><Image alt="gallery" class=" object-cover object-center block rounded-md" src={phone} /></Link>
               </div>
               <div class="md:p-2 p-1 w-1/2 ">
-                <img  alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/500x300" />
+                <Image  alt="gallery" class="w-full object-cover h-full object-center block rounded-md" src={acces} />
               </div>
               <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/501x301" />
+                <Image alt="gallery" class="w-full object-cover h-full object-center block rounded-md" src={compl} />
               </div>
             </div>
             <div class="flex flex-wrap w-1/2">
@@ -33,10 +36,10 @@ const Category = () => {
                 <Image alt="gallery" class=" object-cover object-center block rounded-md" src={pc} />
               </div>
               <div class="md:p-2 p-1 w-1/2">
-                <Image alt="gallery" class=" object-cover object-center block" src={per} />
+                <Image alt="gallery" class=" object-cover object-center block rounded-md" src={per} />
               </div>
               <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/503x303" />
+                <Image alt="gallery" class="w-full object-cover h-full object-center block rounded-md" src={comp} />
               </div>
             </div>
           </div>
