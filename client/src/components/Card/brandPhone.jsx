@@ -5,19 +5,17 @@ export const BrandPhone = () =>{
         <div className="flex justify-center">
             <div className="flex-col m-8">
                 <div className=" border-2 border-gray-500 h-28 w-28 rounded-full " ></div>
-                <p className="">Motorola</p>
             </div>
             <div className="flex-col m-8">
                 <div className=" border-2 border-gray-500 h-28 w-28 rounded-full " ></div>
-                <p className="">Motorola</p>
+
             </div>
             <div className="flex-col m-8">
                 <div className=" border-2 border-gray-500 h-28 w-28 rounded-full " ></div>
-                <p className="">Motorola</p>
+
             </div>
             <div className="flex-col m-8">
                 <div className=" border-2 border-gray-500 h-28 w-28 rounded-full " ></div>
-                <p className="">Motorola</p>
             </div>
         </div>
     )
