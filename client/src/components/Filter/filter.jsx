@@ -3,8 +3,8 @@ import { Select, Option } from "@material-tailwind/react";
 
 export function Filter() {
     return (
-      <div className="bg-black h-auto w-72 m-4 rounded">
-        <p className="text-white">Filtrar</p>
+      <div className="bg-white h-auto w-72 m-1 rounded">
+        <p className="text-black">Filtrar</p>
         <Select label="Marca" color="purple" className="mt-2 bg-white flex w-72 h-8 flex-col gap-6"> 
             <Option>Samsung</Option>
         </Select>

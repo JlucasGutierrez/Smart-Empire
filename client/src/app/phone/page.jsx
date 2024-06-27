@@ -8,15 +8,14 @@ import Header from "@/components/Header/header";
 
 const Phone = () =>{
     return(
-        <div className=" w-full h-auto">
+        <div className=" w-full h-auto bg-gray-50">
             <Header/>
             <BannerPhone/>
-            <BrandPhone/>
             <div className="flex justify-center">
                     <p>SMARTPHONES</p>
                 </div>
+            <BrandPhone/>
             <div className="flex flex-wrap w-full">
-                
                 <div><Filter/></div>
                 <div><CardPhone/></div>
             </div>
