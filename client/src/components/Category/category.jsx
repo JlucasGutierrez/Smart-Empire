@@ -20,7 +20,7 @@ const Category = () => {
           </div>
           <div class="flex flex-wrap md:-m-2 -m-1 ">
             <div class="flex flex-wrap w-1/2">
-             <div class="md:p-2 p-1  bg-gray-200 ">
+             <div class="md:p-2 p-1  ">
                 <Link href="/phone"
                 ><p>Celulares</p>
                   <Image alt="gallery" class=" object-cover object-center block rounded-md" src={phone} /></Link>
