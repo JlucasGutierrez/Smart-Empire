@@ -18,7 +18,43 @@ const Category = () => {
             <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Tecnología que Transforma</h1>
             <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Nos dedicamos a ofrecerte una amplia selección de celulares y computadoras de última generación que no solo cumplen con tus necesidades tecnológicas, sino que también mejoran tu día a día.</p>
           </div>
-          <div class="flex flex-wrap md:-m-2 -m-1 ">
+          <div className="flex ">
+            <div className="flex flex-wrap">
+              <div className=" flex justify-center bg-gray-300 ml-11 rounded-md">
+                <Link href="/phone">
+                  <p>Celulares</p>
+                  <Image alt="gallery" class=" object-cover object-center block" src={phone} />
+                </Link>
+              </div>
+              <div className="flex">
+                <div className="md:p-2 p-1 ">
+                 <Image  alt="gallery" class=" object-cover  object-center block rounded-md" src={acces} />
+                </div>
+                <div className="md:p-2 p-1 ">
+                 <Image alt="gallery" class=" object-cover  object-center block rounded-md" src={compl} />
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-wrap">
+              <div className=" flex justify-center bg-gray-300 ml-11 rounded-md">
+                  <Link href="/pc">
+                   <p>Computadoras</p>
+                   <Image alt="gallery" class=" object-cover object-center block" src={pc} />
+                  </Link>
+              </div>
+              <div className="flex">
+                <div className="md:p-2 p-1 ">
+                 <Image  alt="gallery" class=" object-cover  object-center block rounded-md" src={per} />
+                </div>
+                <div className="md:p-2 p-1 ">
+                 <Image alt="gallery" class=" object-cover  object-center block rounded-md" src={comp} />
+                </div>
+              </div>
+            </div>
+            
+           
+          </div>
+          {/* <div class="flex flex-wrap md:-m-2 -m-1 ">
             <div class="flex flex-wrap w-1/2">
              <div class="md:p-2 p-1  ">
                 <Link href="/phone"
@@ -48,7 +84,7 @@ const Category = () => {
                 <Image alt="gallery" class=" object-cover object-center block rounded-md" src={comp} />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     )
