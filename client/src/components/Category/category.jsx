@@ -28,9 +28,11 @@ const Category = () => {
               </div>
               <div className="flex">
                 <div className="md:p-2 p-1 ">
+                  <p>Accesorios</p>
                  <Image  alt="gallery" class=" object-cover  object-center block rounded-md" src={acces} />
                 </div>
                 <div className="md:p-2 p-1 ">
+                  <p>SmartWatch,Auriculares,Tablet</p>
                  <Image alt="gallery" class=" object-cover  object-center block rounded-md" src={compl} />
                 </div>
               </div>
@@ -44,9 +46,11 @@ const Category = () => {
               </div>
               <div className="flex">
                 <div className="md:p-2 p-1 ">
+                  <p>Perifericos</p>
                  <Image  alt="gallery" class=" object-cover  object-center block rounded-md" src={per} />
                 </div>
                 <div className="md:p-2 p-1 ">
+                  <p>Componentes</p>
                  <Image alt="gallery" class=" object-cover  object-center block rounded-md" src={comp} />
                 </div>
               </div>
