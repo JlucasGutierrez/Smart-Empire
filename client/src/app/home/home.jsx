@@ -3,6 +3,7 @@ import Category from "@/components/Category/category";
 import Footer from "@/components/Footer/footer";
 import Header from "@/components/Header/header";
 import Navbar from "@/components/NavBar/navbar";
+import { CardHome } from "@/components/other/cardHome";
 
 
 
@@ -11,7 +12,8 @@ const Home = () => {
         <div> 
          <Navbar/>
          <Header/>
-         <Banner/>   
+         <Banner/>
+         <CardHome/>   
          <Category/>
          <Footer/>
         </div>

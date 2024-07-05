@@ -4,10 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from 'react';
 const Banner = () =>{
     const images = [
-        require('../../img/banMoto2.png'),
-        require('../../img/banSam.jpg'),
-        require('../../img/banIphone.jpg'),
-        require('../../img/banHua.jpg')
+        require('../../img/banHome.png')
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
