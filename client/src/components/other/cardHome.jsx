@@ -18,7 +18,7 @@ export const CardHome = () =>{
             </div>
             <div className=" m-3 w-48 h-64 border-2">
              <Image src={CC} className="w-auto h-auto"/>
-             <p className="flex justify-center">Todos los Medios de Pago</p>
+             <p className="flex justify-center text-sm">Todos los Medios de Pago</p>
             </div>
             <div className=" m-3 w-48 h-64 border-2">
              <Image src={TO} className="w-auto h-auto"/>
