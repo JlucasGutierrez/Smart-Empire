@@ -39,7 +39,7 @@ const Category = () => {
             </div>
             <div className="flex flex-wrap">
               <div className=" flex justify-center bg-gray-300 ml-11 rounded-md">
-                  <Link href="/pc">
+                  <Link href="/computer">
                    <p>Computadoras</p>
                    <Image alt="gallery" class=" object-cover object-center block" src={pc} />
                   </Link>
