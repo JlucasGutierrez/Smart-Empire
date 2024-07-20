@@ -1,198 +1,50 @@
-import React from "react";
-import {
-  Drawer,
-  Button,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
- 
-export function DrawerPlacement() {
-  const [openTop, setOpenTop] = React.useState(false);
-  const [openRight, setOpenRight] = React.useState(false);
-  const [openBottom, setOpenBottom] = React.useState(false);
-  const [openLeft, setOpenLeft] = React.useState(false);
- 
-  const openDrawerTop = () => setOpenTop(true);
-  const closeDrawerTop = () => setOpenTop(false);
-  const openDrawerRight = () => setOpenRight(true);
-  const closeDrawerRight = () => setOpenRight(false);
-  const openDrawerBottom = () => setOpenBottom(true);
-  const closeDrawerBottom = () => setOpenBottom(false);
-  const openDrawerLeft = () => setOpenLeft(true);
-  const closeDrawerLeft = () => setOpenLeft(false);
- 
+'use client'
+
+import { useState } from 'react'
+import { Dialog, DialogBackdrop, DialogPanel, DialogTitle, TransitionChild } from '@headlessui/react'
+import { XMarkIcon } from '@heroicons/react/24/outline'
+
+export const Login = () => { 
+
+  const [open, setOpen] = useState(true)
+
   return (
-    <React.Fragment>
-      <div className="flex flex-wrap gap-4">
-        <Button onClick={openDrawerTop}>Open Drawer Top</Button>
-        <Button onClick={openDrawerRight}>Open Drawer Right</Button>
-        <Button onClick={openDrawerBottom}>Open Drawer Bottom</Button>
-        <Button onClick={openDrawerLeft}>Open Drawer Left</Button>
+    <Dialog open={open} onClose={setOpen} className="relative z-10">
+      <DialogBackdrop
+        transition
+        className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity duration-500 ease-in-out data-[closed]:opacity-0"
+      />
+
+      <div className="fixed inset-0 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+            <DialogPanel
+              transition
+              className="pointer-events-auto relative w-screen max-w-md transform transition duration-500 ease-in-out data-[closed]:translate-x-full sm:duration-700"
+            >
+              <TransitionChild>
+                <div className="absolute left-0 top-0 -ml-8 flex pr-2 pt-4 duration-500 ease-in-out data-[closed]:opacity-0 sm:-ml-10 sm:pr-4">
+                  <button
+                    type="button"
+                    onClick={() => setOpen(false)}
+                    className="relative rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+                  >
+                    <span className="absolute -inset-2.5" />
+                    <span className="sr-only">Close panel</span>
+                    <XMarkIcon aria-hidden="true" className="h-6 w-6" />
+                  </button>
+                </div>
+              </TransitionChild>
+              <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                <div className="px-4 sm:px-6">
+                  <DialogTitle className="text-base font-semibold leading-6 text-gray-900">Panel title</DialogTitle>
+                </div>
+                <div className="relative mt-6 flex-1 px-4 sm:px-6">{/* Your content */}</div>
+              </div>
+            </DialogPanel>
+          </div>
+        </div>
       </div>
-       <Drawer
-        placement="top"
-        open={openTop}
-        onClose={closeDrawerTop}
-        className="p-4"
-      >
-        <div className="mb-6 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray">
-            Material Tailwind
-          </Typography>
-          <IconButton variant="text" color="blue-gray" onClick={closeDrawerTop}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="h-5 w-5"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </IconButton>
-        </div>
-        <Typography color="gray" className="mb-8 pr-4 font-normal">
-          Material Tailwind features multiple React and HTML components, all
-          written with Tailwind CSS classes and Material Design guidelines.
-        </Typography>
-        <div className="flex gap-2">
-          <Button size="sm" variant="outlined">
-            Documentation
-          </Button>
-          <Button size="sm">Get Started</Button>
-        </div>
-      </Drawer>
-      <Drawer
-        placement="right"
-        open={openRight}
-        onClose={closeDrawerRight}
-        className="p-4"
-      >
-        <div className="mb-6 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray">
-            Material Tailwind
-          </Typography>
-          <IconButton
-            variant="text"
-            color="blue-gray"
-            onClick={closeDrawerRight}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="h-5 w-5"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </IconButton>
-        </div>
-        <Typography color="gray" className="mb-8 pr-4 font-normal">
-          Material Tailwind features multiple React and HTML components, all
-          written with Tailwind CSS classes and Material Design guidelines.
-        </Typography>
-        <div className="flex gap-2">
-          <Button size="sm" variant="outlined">
-            Documentation
-          </Button>
-          <Button size="sm">Get Started</Button>
-        </div>
-      </Drawer>
-      <Drawer
-        placement="bottom"
-        open={openBottom}
-        onClose={closeDrawerBottom}
-        className="p-4"
-      >
-        <div className="mb-6 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray">
-            Material Tailwind
-          </Typography>
-          <IconButton
-            variant="text"
-            color="blue-gray"
-            onClick={closeDrawerBottom}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="h-5 w-5"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </IconButton>
-        </div>
-        <Typography color="gray" className="mb-8 pr-4 font-normal">
-          Material Tailwind features multiple React and HTML components, all
-          written with Tailwind CSS classes and Material Design guidelines.
-        </Typography>
-        <div className="flex gap-2">
-          <Button size="sm" variant="outlined">
-            Documentation
-          </Button>
-          <Button size="sm">Get Started</Button>
-        </div>
-      </Drawer>
-      <Drawer
-        placement="left"
-        open={openLeft}
-        onClose={closeDrawerLeft}
-        className="p-4"
-      >
-        <div className="mb-6 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray">
-            Material Tailwind
-          </Typography>
-          <IconButton
-            variant="text"
-            color="blue-gray"
-            onClick={closeDrawerLeft}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="h-5 w-5"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </IconButton>
-        </div>
-        <Typography color="gray" className="mb-8 pr-4 font-normal">
-          Material Tailwind features multiple React and HTML components, all
-          written with Tailwind CSS classes and Material Design guidelines.
-        </Typography>
-        <div className="flex gap-2">
-          <Button size="sm" variant="outlined">
-            Documentation
-          </Button>
-          <Button size="sm">Get Started</Button>
-        </div>
-      </Drawer>
-    </React.Fragment>
-  );
+    </Dialog>
+  )
 }

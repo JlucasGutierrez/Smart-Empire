@@ -1,12 +1,6 @@
 "use client"
 import React from "react";
 import Link from "next/link"
-import {
-  Drawer,
-  Button,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
 
 function Header(){
   const [openRight, setOpenRight] = React.useState(false);
@@ -31,17 +25,6 @@ function Header(){
               >
                  <span className="block rounded-sm bg-black px-8 py-2 text-sm font-medium text-white group-hover:bg-transparent">
                  Login
-                 <Drawer
-                  placement="right"
-                  open={openRight}
-                  onClose={closeDrawerRight}
-                  className="p-1"
-                 >
-                  <div className="mb-6 flex items-center justify-between">
-
-                    <p className="bg-black">Login</p>
-                  </div>
-                 </Drawer>
                 </span>
               </button>
               <button className="group inline-block rounded bg-gradient-to-r from-purple-600 via-purple-500 to-purple-700 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75">
